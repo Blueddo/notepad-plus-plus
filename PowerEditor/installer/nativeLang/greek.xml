@@ -175,10 +175,10 @@
                     <Item id="42066" name="Ταξινόμηση γραμμών ως δεκαδικά (Dot) φθίνουσα"/>
                     <Item id="42067" name="&amp;Σωστή υπόθεση"/>
                     <Item id="42068" name="Σωστή υπόθεση (ανάμειξη)"/>
-                    <Item id="42069" name="&amp;Sentence case"/>
-                    <Item id="42070" name="Sentence case (blend)"/>
-                    <Item id="42071" name="&amp;iNVERT cASE"/>
-                    <Item id="42072" name="&amp;ranDOm CasE"/>
+                    <Item id="42069" name="&amp;Υπόθεση πρότασης"/>
+                    <Item id="42070" name="Υπόθεση πρότασης (ανάμειξη)"/>
+                    <Item id="42071" name="&amp;αΝΤΙΣΤΡΟΦΗ υΠΌΘΕΣΗ"/>
+                    <Item id="42072" name="&amp;τυχΑΙα ΥπόθεσΗ"/>
                     <Item id="42073" name="Άνοιγμα αρχείου"/>
                     <Item id="42074" name="Άνοιγμα φακέλου που περιέχει στην Εξερεύνηση"/>
                     <Item id="42075" name="Αναζήτηση στο Internet"/>
@@ -279,6 +279,7 @@
                     <Item id="44041" name="Εμφάνιση συμβόλου αναδίπλωσης"/>
                     <Item id="44042" name="Απόκρυψη γραμμών"/>
                     <Item id="44049" name="Σύνοψη Αρχείου"/>
+                    <Item id="44070" name="Κατάλογος Εγγράφων"/>
                     <Item id="44072" name="Εστίαση σε άλλη επισκόπηση"/>
                     <Item id="44080" name="Χάρτης εγγράφου"/>
                     <Item id="44081" name="Πίνακας Έργασίας 1"/>
@@ -298,8 +299,8 @@
                     <Item id="44095" name="Επόμενη καρτέλα"/>
                     <Item id="44096" name="Προηγούμενη καρτέλα"/>
                     <Item id="44097" name="Παρακολούθηση (ουρά -f)"/>
-                    <Item id="44098" name="Move Tab Forward"/>
-                    <Item id="44099" name="Move Tab Backward"/>
+                    <Item id="44098" name="Μετακίνηση Καρτέλας Προς Τα Εμπρός"/>
+                    <Item id="44099" name="Μετακίνηση Καρτέλας Προς Τα Πίσω"/>
                     <Item id="45001" name="Windows (CR LF)"/>
                     <Item id="45002" name="Unix (LF)"/>
                     <Item id="45003" name="Macintosh (CR)"/>
@@ -312,15 +313,14 @@
                     <Item id="45010" name="Μετατροπή σε UTF-8"/>
                     <Item id="45011" name="Μετατροπή σε UTF-8-BOM"/>
                     <Item id="45012" name="Μετατροπή σε UTF-16 BE BOM"/>
-
                     <Item id="45013" name="Μετατροπή σε UTF-16 LE BOM"/>
                     <Item id="45060" name="Big5 (Παραδοσιακό)"/>
                     <Item id="45061" name="GB2312 (Απλοποιημένο)"/>
+                    <Item id="45053" name="OEM 860: Πορτογαλικά"/>
                     <Item id="45054" name="OEM 861: Ισλανδικά"/>
                     <Item id="45056" name="OEM 863: Γαλλικά"/>
-                    <Item id="45053" name="OEM 860: Πορτογαλικά"/>
-
                     <Item id="45057" name="OEM 865: Σκανδιναβική"/>
+
                     <Item id="46001" name="Διαμορφωτής Στυλ..."/>
                     <Item id="46180" name="Ορισμός από το χρήστη"/>
                     <Item id="46250" name="Καθορίστε τη γλώσσα σας..."/>
@@ -346,7 +346,6 @@
                     <Item id="48018" name="Επεξεργασία Αναδυόμενου Μενού"/>
                     <Item id="48501" name="Δημιουργία..."/>
                     <Item id="48502" name="Δημιουργία από αρχεία..."/>
-
                     <Item id="48503" name="Δημιουργία από την επιλογή στο πρόχειρο"/>
                     <Item id="48504" name="Δημιουργία..."/>
                     <Item id="48505" name="Δημιουργία από αρχεία..."/>
@@ -373,13 +372,13 @@
                     <Item id="11007" name="Τύπος Ω έως Α"/>
                     <Item id="11008" name="Μέγεθος Μικρότερο προς Μεγαλύτερο"/>
                     <Item id="11009" name="Μέγεθος Μεγαλύτερο προς Μικρότερο"/>
-                    </Commands>
+                </Commands>
             </Main>
             <Splitter>
             </Splitter>
             <TabBar>
                     <Item CMID="0"  name="Κλείσιμο"/>
-                    <Item CMID="1"  name="Κλείσιμο όλων εκτός του παρόντος"/>
+                    <Item CMID="1"  name="Κλείσιμο όλων ΕΚΤΟΣ του Παρόντος"/>
                     <Item CMID="2"  name="Αποθήκευση"/>
                     <Item CMID="3"  name="Αποθήκευση Ως"/>
                     <Item CMID="4"  name="Εκτύπωση"/>
@@ -392,16 +391,16 @@
                     <Item CMID="11" name="Διαγραφή"/>
                     <Item CMID="12" name="Μόνο για Ανάγνωση"/>
                     <Item CMID="13" name="Καθαρισμός μόνο για ανάγνωση μεταβητής flag"/>
-                    <Item CMID="14" name="Μετάβαση σε νέο παράθυρο"/>
-                    <Item CMID="15" name="Άνοιγμα σε νέο παράθυρο"/>
+                    <Item CMID="14" name="Μετάβαση σε Νέο παράθυρο"/>
+                    <Item CMID="15" name="Άνοιγμα σε Νέο παράθυρο"/>
                     <Item CMID="16" name="Επαναφόρτωση"/>
-                    <Item CMID="17" name="Κλείσιμο όλων στα αριστερά"/>
-                    <Item CMID="18" name="Κλείσιμο όλων στα δεξιά"/>
+                    <Item CMID="17" name="Κλείσιμο όλων στα Αριστερά"/>
+                    <Item CMID="18" name="Κλείσιμο όλων στα Δεξιά"/>
                     <Item CMID="19" name="Άνοιγμα περιεχομένων φακέλου στην Εξερεύνηση"/>
                     <Item CMID="20" name="Άνοιγμα φακέλου που περιέχει στο cmd"/>
-                    <Item CMID="21" name="Άνοιγμα στο προεπιλεγμένο πρόγραμμα προβολής"/>
-                    <Item CMID="22" name="Κλείσιμο όλων χωρίς αλλαγές"/>
-                    <Item CMID="23" name="Άνοιγμα περιεχομένου φακέλου ως χώρο εργασίας"/>
+                    <Item CMID="21" name="Άνοιγμα στο προεπιλεγμένο πρόγραμμα Προβολής"/>
+                    <Item CMID="22" name="Κλείσιμο όλων χωρίς Αλλαγές"/>
+                    <Item CMID="23" name="Άνοιγμα περιεχομένου φακέλου ως χώρο Εργασίας"/>
             </TabBar>
         </Menu>
 
@@ -445,10 +444,16 @@
                 <Item id="1688" name="Πάντα"/>
                 <Item id="1703" name="&amp;. ίδιο νέα γραμμή"/>
                 <Item id="1721" name="▲"/>
-                <Item id="1722" name="Κατεύθυνση πίσω"/>
-                <Item id="1723" name="▼ Εύρεση επόμενου"/>
-                <Item id="1725" name="Αντιγρ. μαρκαρ. κειμενου"/>
+                <Item id="1722" name="Κατεύθυνση Πίσω"/>
+                <Item id="1723" name="▼ Εύρεση Επόμενου"/>
+                <Item id="1725" name="Αντιγρ. Μαρκαρ. Κειμενου"/>
             </Find>
+
+            <IncrementalFind title="">
+                <Item id="1681" name="Εύρεση"/>
+                <Item id="1685" name="Υπόθεση αντιστοίχισης"/>
+                <Item id="1690" name="Επισήμανση όλων"/>
+            </IncrementalFind>
 
             <FindCharsInRange title="Εύρεση χαρακτήρων στην περιοχή...">
                 <Item id="2" name="Κλείσιμο"/>
@@ -458,7 +463,7 @@
                 <Item id="2906" name="&amp;Επάνω"/>
                 <Item id="2907" name="&amp;Κάτω"/>
                 <Item id="2908" name="Κατεύθυνση"/>
-                <Item id="2909" name="Αναδίπλωση γύρω"/>
+                <Item id="2909" name="Ανα&amp;δίπλωση γύρω"/>
                 <Item id="2910" name="Εύρεση"/>
             </FindCharsInRange>
 
@@ -567,37 +572,37 @@
                     <Item id="41019" name="Άνοιγμα του φακέλου που το περιέχει στην Εξερεύνηση"/>
                     <Item id="41020" name="Άνοιγμα του φακέλου που το περιέχει στη γραμμή εντολών"/>
                     <Item id="41021" name="Επαναφορά πρόσφατου κλειστού αρχείου"/>
-                    <Item id="45001" name="EOL Conversion to Windows (CR LF)"/>
-                    <Item id="45002" name="EOL Conversion to Unix (LF)"/>
-                    <Item id="45003" name="EOL Conversion to Macintosh (CR)"/>
-                    <Item id="43022" name="Style all using 1st style"/>
-                    <Item id="43024" name="Style all using 2nd style"/>
-                    <Item id="43026" name="Style all using 3rd style"/>
-                    <Item id="43028" name="Style all using 4th style"/>
-                    <Item id="43030" name="Style all using 5th style"/>
-                    <Item id="43062" name="Style one using 1st style"/>
-                    <Item id="43063" name="Style one using 2nd style"/>
-                    <Item id="43064" name="Style one using 3rd style"/>
-                    <Item id="43065" name="Style one using 4th style"/>
-                    <Item id="43066" name="Style one using 5th style"/>
-                    <Item id="43023" name="Clear 1st style"/>
-                    <Item id="43025" name="Clear 2nd style"/>
-                    <Item id="43027" name="Clear 3rd style"/>
-                    <Item id="43029" name="Clear 4th style"/>
-                    <Item id="43031" name="Clear 5th style"/>
-                    <Item id="43032" name="Clear all styles"/>
-                    <Item id="43033" name="Previous style of 1st style"/>
-                    <Item id="43034" name="Previous style of 2nd style"/>
-                    <Item id="43035" name="Previous style of 3rd style"/>
-                    <Item id="43036" name="Previous style of 4th style"/>
-                    <Item id="43037" name="Previous style of 5th style"/>
-                    <Item id="43038" name="Previous style of Find Mark style"/>
-                    <Item id="43039" name="Next style of 1st style"/>
-                    <Item id="43040" name="Next style of 2nd style"/>
-                    <Item id="43041" name="Next style of 3rd style"/>
-                    <Item id="43042" name="Next style of 4th style"/>
-                    <Item id="43043" name="Next style of 5th style"/>
-                    <Item id="43044" name="Next style of Find Mark style"/>
+                    <Item id="45001" name="Μετατροπή EOL σε Windows (CR LF)"/>
+                    <Item id="45002" name="Μετατροπή EOL σε Unix (LF)"/>
+                    <Item id="45003" name="Μετατροπή EOL σε Macintosh (CR)"/>
+                    <Item id="43022" name="Διαμορφώση όλων χρησιμοποιώντας το 1ο στυλ"/>
+                    <Item id="43024" name="Διαμορφώση όλων χρησιμοποιώντας το 2ο στυλ"/>
+                    <Item id="43026" name="Διαμορφώση όλων χρησιμοποιώντας το 3ο στυλ"/>
+                    <Item id="43028" name="Διαμορφώση όλων χρησιμοποιώντας το 4ο στυλ"/>
+                    <Item id="43030" name="Διαμορφώση όλων χρησιμοποιώντας το 5ο στυλ"/>
+                    <Item id="43062" name="Στυλ ένα χρησιμοποιώντας το 1ο στυλ"/>
+                    <Item id="43063" name="Στυλ ένα χρησιμοποιώντας το 2ο στυλ"/>
+                    <Item id="43064" name="Στυλ ένα χρησιμοποιώντας το 3ο στυλ"/>
+                    <Item id="43065" name="Στυλ ένα χρησιμοποιώντας το 4ο στυλ"/>
+                    <Item id="43066" name="Στυλ ένα χρησιμοποιώντας το 5ο στυλ"/>
+                    <Item id="43023" name="Απαλοιφή του 1ου στυλ"/>
+                    <Item id="43025" name="Απαλοιφή του 2ου στυλ"/>
+                    <Item id="43027" name="Απαλοιφή του 3ου στυλ"/>
+                    <Item id="43029" name="Απαλοιφή του 4ου στυλ"/>
+                    <Item id="43031" name="Απαλοιφή του 5ου στυλ"/>
+                    <Item id="43032" name="Απαλοιφή όλων των στυλ"/>
+                    <Item id="43033" name="Προηγούμενο στυλ από το 1ου στυλ"/>
+                    <Item id="43034" name="Προηγούμενο στυλ από το 2ου στυλ"/>
+                    <Item id="43035" name="Προηγούμενο στυλ από το 3ου στυλ"/>
+                    <Item id="43036" name="Προηγούμενο στυλ από το 4ου στυλ"/>
+                    <Item id="43037" name="Προηγούμενο στυλ από το 5ου στυλ"/>
+                    <Item id="43038" name="Προηγούμενο στυλ του στυλ Εύρεση Σήμανσης"/>
+                    <Item id="43039" name="Επόμενο στυλ από το 1ου στυλ"/>
+                    <Item id="43040" name="Επόμενο στυλ από το 2ου στυλ"/>
+                    <Item id="43041" name="Επόμενο στυλ από το 3ου στυλ"/>
+                    <Item id="43042" name="Επόμενο στυλ από το 4ου στυλ"/>
+                    <Item id="43043" name="Επόμενο στυλ από το 5ου στυλ"/>
+                    <Item id="43044" name="Επόμενο στυλ του στυλ Εύρεση Σήμανσης"/>
                     <Item id="43055" name="Αντιγραφή στυλιζαρισμένου κειμένου - 1ο στυλ"/>
                     <Item id="43056" name="Αντιγραφή στυλιζαρισμένου κειμένου - 2ο στυλ"/>
                     <Item id="43057" name="Αντιγραφή στυλιζαρισμένου κειμένου - 3ο στυλ"/>
@@ -868,7 +873,7 @@
                 </Global>
                 <Scintillas title="Επεξεργ. Τμημάτων">
                     <Item id="6214" name="Ενεργό σημάδι τρέχουσας γραμμής"/>
-                    <Item id="6215" name="Ενεργοπ. ομαλής γρ/σειράς"/>
+                    <Item id="6215" name="Ενεργοποίηση ομαλής γραμματοσειράς"/>
                     <Item id="6216" name="Ρυθμίσεις Αγκύλης"/>
                     <Item id="6217" name="Πλάτος: "/>
                     <Item id="6219" name="Ρυθμός Αναλαμπής: "/>
@@ -879,11 +884,11 @@
                     <Item id="6228" name="Εξ΄ ορισμού"/>
                     <Item id="6229" name="Ευθυγράμμιση"/>
                     <Item id="6230" name="Εσοχή"/>
-                    <Item id="6234" name="Ενεργ. προηγμένης δυνατ. κύλισης(με πρόβλημα στο touchpad)"/>
-                    <Item id="6236" name="Ενεργ. κύλισης πέρα από την τελευταία γραμμή"/>
+                    <Item id="6234" name="Ενεργοποίηση προηγμένης δυνατότητας κύλισης (με πρόβλημα στο touchpad)"/>
+                    <Item id="6236" name="Ενεργοποίηση κύλισης πέρα από την τελευταία γραμμή"/>
                     <Item id="6239" name="Διατηρήστε την επιλογή όταν κάνετε δεξί κλικ εκτός της επιλογής"/>
                     <Item id="6245" name="Ενεργοποίηση εικονικού χώρου"/>
-                    <Item id="6246" name="Κάντε τις εντολές αναδίπλωσης/αποδίπλωσης του τρέχοντος επιπέδου εναλλασσόμενες"/>
+                    <Item id="6246" name="Κάντε τις εντολές αναδίπλωσης/αποδίπλωσης του τρέχ. επιπέδου εναλλασσόμενες"/>
                     <Item id="6651" name="Ένδειξη τρέχουσας γραμμής"/>
                     <Item id="6652" name="Κανένα"/>
                     <Item id="6653" name="Επισήμανση φόντου"/>
@@ -896,7 +901,7 @@
                 </Scintillas>
 
                 <DarkMode title="Σκοτεινή λειτουργία">
-                    <Item id="7101" name="Ενεργ. σκοτεινής λειτουργίας"/>
+                    <Item id="7101" name="Ενεργοποίηση σκοτεινής λειτουργίας"/>
                     <Item id="7102" name="Μαύρος τόνος"/>
                     <Item id="7103" name="Κόκκινος τόνος"/>
                     <Item id="7104" name="Πράσινος τόνος"/>
@@ -947,16 +952,16 @@
                 </MarginsBorderEdge>
 
                 <NewDoc title="Νέο Έγγραφο/Άνοιγμα Αποθήκευση Καταλόγου">
-                    <Item id="6401" name="Μορφή"/>
-                    <Item id="6402" name="Windows"/>
-                    <Item id="6403" name="Unix"/>
-                    <Item id="6404" name="Mac"/>
+                    <Item id="6401" name="Μορφή (τέλος γραμμής)"/>
+                    <Item id="6402" name="Windows (CR LF)"/>
+                    <Item id="6403" name="Unix (LF)"/>
+                    <Item id="6404" name="Macintosh (CR)"/>
                     <Item id="6405" name="Κωδικοποίηση"/>
                     <Item id="6406" name="ANSI"/>
                     <Item id="6407" name="UTF-8 χωρίς BOM"/>
                     <Item id="6408" name="UTF-8"/>
-                    <Item id="6409" name="UCS-2 Big Endian"/>
-                    <Item id="6410" name="UCS-2 Little Endian"/>
+                    <Item id="6409" name="UCS-2 Big Endian χωρίς BOM"/>
+                    <Item id="6410" name="UCS-2 Little Endian χωρίς BOM"/>
                     <Item id="6411" name="Γλώσσα Προεπιλογής: "/>
                     <Item id="6419" name="Νέο Έγγραφο"/>
                     <Item id="6420" name="Εφαρμογή σς ανοικτά αρχεία ANSI"/>
@@ -978,8 +983,8 @@
                     <Item id="6505" name="Διαθέσιμα στοιχεία"/>
                     <Item id="6506" name="Απενεργ. στοιχεία"/>
                     <Item id="6507" name="Συμπύκνωση μενού γλώσσας"/>
-                    <Item id="6508" name="Γλώσσα Menu"/>
-                    <Item id="6301" name="Ρυθμίσεις καρτέλας"/>
+                    <Item id="6508" name="Μενού Γλώσσας"/>
+                    <Item id="6301" name="Ρυθμίσεις Καρτέλας"/>
                     <Item id="6302" name="Αντικατάσταση με κενό"/>
                     <Item id="6303" name="Μέγεθος καρτέλας: "/>
                     <Item id="6510" name="Χρήση προεπιλ. τιμής"/>
@@ -1051,7 +1056,7 @@
                     <Item id="6906" name="Παράθυρο αποτελεσμάτων αναζήτησης: εμφανίζει μόνο μία καταχώρηση ανά γραμμή εύρεσης"/>
                 </Searching>
 
-                <RecentFilesHistory title="Ιστορ πρόσφ αρχείων">
+                <RecentFilesHistory title="Ιστορ. Πρόσφ. Αρχείων">
                     <Item id="6304" name="Ιστορικό πρόσφατων αρχείων"/>
                     <Item id="6306" name="Μέγ. αριθμός καταχωρήσεων :"/>
                     <Item id="6305" name="Να μην γίνεται έλεγχος κατά την εκκίνηση"/>
@@ -1334,7 +1339,7 @@
             <PanelTitle name="Ιστορικό πρόχειρου"/>
         </ClipboardHistory>
         <DocList>
-            <PanelTitle name="Κατάλογος εγγράφων"/>
+            <PanelTitle name="Κατάλογος Εγγράφων"/>
             <ColumnName name="Όνομα"/>
             <ColumnExt name="Ext."/>
             <ColumnPath name="Διαδρομή"/>
